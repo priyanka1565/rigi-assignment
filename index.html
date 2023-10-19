@@ -1,11 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rigi Assignment</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Logo</div>
+      <div class="hamburger_icons">
+        <div class="sidenav" id="sidenav1"></div>
+        <div class="sidenav" id="sidenav2"></div>
+        <div class="sidenav" id="sidenav3"></div>
+      </div>
+      <nav class="navbar">
+        <div>
+          <a href="" class="navbar_active">Join Community</a>
+          <a href="">Contact Us</a>
+        </div>
+      </nav>
+    </header>
+
+    <div id="main_heading">
+      <div class="sub_heading">
+        <div>
+          <h1>Hack your wealth journey inside the 1% club</h1>
+
+          <p>
+            A super premium annual subscription that will transform your wealth
+            planning and make you say -“Bro! I’m financially sorted!”
+          </p>
+
+          <button>Join the Community</button>
+        </div>
+      </div>
+
+      <div class="heading_main_Image">
+        <div><img src="./images/6.png" alt="" /></div>
+      </div>
+
+      <button class="smallScreenBtn">Join the Community</button>
+    </div>
+
+    <div id="features_section">
+      <p>Featured In</p>
+      <div class="firstSec">
+        <h1>Forbes</h1>
+        <div>
+          <p>THE</p>
+          <p>ECONOMIC</p>
+          <p>TIMES</p>
+        </div>
+        <h1>mint</h1>
+      </div>
+      <div class="secondSec">
+        <h1>THE TIMES OF INDIA</h1>
+        <h1>Forbes</h1>
+      </div>
+    </div>
+
+    <div class="about_section">
+      <p>About Me</p>
+      <div>
+        <h2>Entrepreneur, content creator, Finance Influencer</h2>
+      </div>
+
+      <div class="middle_Img">
+        <img src="./images/7.png" alt="" />
+      </div>
+
+      <div class="paragraph">
+        <p>
+          Hi, I'm Finance With Sharan. I’m a former management consultant at
+          KPMG and PwC where I worked with banks and NBFCs to help them make a
+          ton of money.
+        </p>
+        <p>
+          I now work as a full-time content creator and help the common man make
+          a ton of money.
+        </p>
+        <p>
+          I create engaging personal finance content with a blend of comedic
+          flavor and cosplay on Instagram and YouTube. I also write down highly
+          action oriented posts on LinkedIn and Twitter for those who are not on
+          social media platforms and prefer to read it instead
+        </p>
+      </div>
+
+      <div class="socialIcons">
+        <img src="images/instagram.png" alt="Instagram" />
+        <img src="images/facebook.png" alt="Facebook" />
+        <img src="images/linkedin.png" alt="LinkedIn" />
+        <img src="images/twitter.png" alt="Twitter" />
+        <img src="images/youtube.png" alt="YouTube" />
+      </div>
+    </div>
+  </body>
 </html>
+<script>
+  let hamburger_icons = document.querySelector(".hamburger_icons");
+
+hamburger_icons.addEventListener("click", () => {
+ let navBar = document.querySelector(".navbar");
+  navBar.classList.toggle("active");
+
+ 
+  document.querySelector("#sidenav1").classList.toggle("sidenav1");
+  document.querySelector("#sidenav2").classList.toggle("sidenav2");
+  document.querySelector("#sidenav3").classList.toggle("sidenav3");
+});
+</script>
